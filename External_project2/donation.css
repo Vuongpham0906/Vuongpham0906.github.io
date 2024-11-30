@@ -1,0 +1,174 @@
+.bar ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .bar a {
+    text-decoration:none;
+    background: #465b77;
+    padding: 20px;
+    display: block;
+    border-radius:10px;
+    color: #ffffff;
+    font-size:40px;
+  }
+  .bar a:hover {
+    background: #6d8db8;
+  }
+  .bar li {
+    padding: 15px;
+  }
+
+.donate {
+  list-style-type:none;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.donate li {
+  border: 2px solid #ffffff;
+  padding:20px;
+  color:white;
+  background: #465b77;
+}
+.donate li:hover {
+  color:white;
+  background:#2e3b4d;
+}
+
+label {
+  color: white;
+}
+form {
+  max-width:50%;
+  background: #465b77;
+  border-radius: 5px;
+  padding:30px;
+  margin: 40px;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="email"],
+label 
+input[type="zipcode"]{
+  width:100%;
+  padding: 10px;
+  margin-right: 20px;
+  display:block;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+Label {
+  border:none;
+  font-size: 1.1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width:100%;
+  background:#ffffff;
+  color: #000000;
+  padding: 14px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+select {
+  padding: 15px;
+  margin-right: 15px;
+}
+
+nav {
+  background:  #3c4f68;
+  color:white;
+  padding: 50px;
+  font-size: 30px;
+  border: 6px solid #adabab;
+}
+
+img {
+max-width: 100%;
+}
+nav p {
+  margin-left: 550px;
+  font-size:110%;
+}
+header h1 {
+color:white;
+text-align: center;
+border: 6px solid #273343;
+}
+main > *, header {
+  background-color: #273343;
+  color: #ffffff;
+  border: 3px solid#adabab;
+  padding: 12px;
+}
+
+.Fund h2 {
+    color:rgb(255, 255, 255);
+    background:#6c8cb9;
+    padding:10px;
+    position:absolute;
+    border: 1px solid white;
+    border-radius:10px;
+  }
+.Fund h2:hover {
+  color:rgb(255, 255, 255);
+  background:#63a2ef;
+  padding:10px;
+  position:absolute;
+}
+
+.volunteer {
+  color:white;
+  padding: 10px;
+  background:#465b77;
+}
+
+footer {
+  color: white;
+  font-size:10px;
+  background-color: #3c4f68;
+  padding:20px;
+}
+main {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "bar bar"
+      "donate1 donate2"
+      "payment payment"
+      "fund volunteer"
+;
+}
+
+section:nth-of-type(1) {
+  grid-area: bar;
+}
+section:nth-of-type(2) {
+  grid-area: donate1;
+}
+section:nth-of-type(3) {
+  grid-area: donate2;
+}
+section:nth-of-type(4) {
+  grid-area: payment;
+}
+section:nth-of-type(5) {
+  grid-area: Fund;
+}
+section:nth-of-type(5) {
+  grid-area: volunteer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  main {
+  display: block;
+  } 
+}
+
